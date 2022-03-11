@@ -11,14 +11,14 @@ interface GroceryItem {
     quantity: string
 }
 
-function displayList(items: GroceryItem) {
+function GList(items: GroceryItem) {
     return "Grocery Item: " + items.item + " ---- Price: $" + items.price + " ---- Quantity: " + items.quantity;
 }
 
-let itemOne = new Grocery("Eggs", "3.99", "1 Dozen");
-let itemTwo = new Grocery("Milk", "5.00", "1");
-let itemThree = new Grocery("Pizza", "7.99", "1");
-let itemFour = new Grocery("Beer", "10.00", "12");
+let i1 = new Grocery("Bacon", "3.99", "1 pack");
+let i2 = new Grocery("Orange Juice", "5.00", "1");
+let i3 = new Grocery("Chicken", "8.50", "2");
+let i4 = new Grocery("Mixed Veggies", "8.00", "1");
 
 
-document.body.textContent = displayList(itemOne) + ", " + displayList(itemTwo) + ", " + displayList(itemThree) + ", " + displayList(itemFour) ;
+document.body.textContent = GList(i1) + ", " + GList(i2) + ", " + GList(i3) + ", " + GList(i4) ;

@@ -8,7 +8,7 @@ class Grocery {
 interface GroceryItem {
     item: string,
     price: string,
-    quantity: string
+    quantity: string,
 }
 
 function GList(items: GroceryItem) {
